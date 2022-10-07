@@ -5,7 +5,7 @@ import Nav from "./components/Nav";
 
 import Homepage from "./components/Main/Homepage";
 import About from "./components/Main/About";
-import Items from "./components/Main/Items";
+import Products from "./components/Main/Products/Products";
 import Auth from "./components/Main/Auth";
 import Cart from "./components/Main/Cart";
 
@@ -20,7 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
-        <Route path="/items" element={<Items />} />
+        <Route path="/products" element={<Products />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>

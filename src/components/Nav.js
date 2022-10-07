@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from ".././imgs/logo.webp";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { IconButton, Badge } from "@mui/material";
 
 const Nav = () => {
   return (
@@ -12,7 +14,7 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          <Link to="/items">
+          <Link to="/products">
             <span class="material-icons">redeem</span>商品一覽
           </Link>
         </li>
@@ -29,8 +31,16 @@ const Nav = () => {
         </li>
         <li>
           <Link to="/cart">
-            <span class="material-icons">shopping_cart</span>購物車
-          </Link>
+            {/* <span class="material-icons">shopping_cart</span>購物車 */}
+            <span>
+              <IconButton aria-label="Cart">
+                <Badge badgeContent={2} color="success">
+                  <ShoppingCartIcon />
+                </Badge>
+              </IconButton>
+            </span>
+          </Link>{" "}
+          　　
         </li>
       </ul>
     </nav>
