@@ -4,7 +4,7 @@ import logo from ".././imgs/logo.webp";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { IconButton, Badge } from "@mui/material";
 
-const Nav = () => {
+const Nav = ({ totalItems }) => {
   return (
     <nav>
       <ul>
@@ -34,13 +34,12 @@ const Nav = () => {
             {/* <span class="material-icons">shopping_cart</span>購物車 */}
             <span>
               <IconButton aria-label="Cart">
-                <Badge badgeContent={2} color="success">
+                <Badge badgeContent={totalItems} color="success">
                   <ShoppingCartIcon />
                 </Badge>
               </IconButton>
             </span>
-          </Link>{" "}
-          　　
+          </Link>
         </li>
       </ul>
     </nav>
