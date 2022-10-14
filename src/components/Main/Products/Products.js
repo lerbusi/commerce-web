@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import Product from "./Product/Product";
 
 import { CardMedia } from "@mui/material";
-import abtimg from "../../../imgs/productimg.webp";
+import productimg from "../../../imgs/productimg.webp";
 
 // ---內建商品資料(for test)
 // import image1 from "../../../imgs/items/item01a.webp";
@@ -52,8 +52,8 @@ const Products = ({ products, onAddToCart }) => {
           height: 300,
         }}
         component="img"
-        image={abtimg}
-        alt="abtimg"
+        image={productimg}
+        alt="productimg"
       ></CardMedia>
 
       <h1 style={{ marginTop: "1%" }}>產品列表</h1>
