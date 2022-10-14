@@ -24,7 +24,7 @@ const Auth = () => {
           different, so you'll want to think of these parameters more as
           guidelines than law. Some fine tuning may be required to identify the
           ideal care requirements for your specific environment. Remember to
-          have fun!
+          have fun
         </Typography>
       </Container>
     </div>
