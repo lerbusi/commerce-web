@@ -2,6 +2,9 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import Product from "./Product/Product";
 
+import { CardMedia } from "@mui/material";
+import abtimg from "../../../imgs/productimg.webp";
+
 // ---內建商品資料(for test)
 // import image1 from "../../../imgs/items/item01a.webp";
 // import image2 from "../../../imgs/items/item02a.webp";
@@ -44,7 +47,16 @@ import Product from "./Product/Product";
 const Products = ({ products, onAddToCart }) => {
   return (
     <main>
-      <h2> 產品列表</h2>
+      <CardMedia
+        style={{
+          height: 300,
+        }}
+        component="img"
+        image={abtimg}
+        alt="abtimg"
+      ></CardMedia>
+
+      <h1 style={{ marginTop: "1%" }}>產品列表</h1>
       <Grid container justify="center" spacing={4} style={{ padding: "1rem" }}>
         {products.map((product) => (
           <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>

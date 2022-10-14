@@ -7,7 +7,7 @@ import Homepage from "./components/Main/Homepage";
 import About from "./components/Main/About";
 import Products from "./components/Main/Products/Products";
 import Auth from "./components/Main/Auth";
-import Cart from "./components/Main/Cart";
+import Cart from "./components/Cart/Cart";
 import Footer from "./components/Footer";
 
 import "./style/style.css";
@@ -27,8 +27,23 @@ function App() {
   };
 
   const onAddToCart = async (productId, quantity) => {
-    const item = await commerce.cart.add(productId, quantity);
-    setCart(item);
+    const res = await commerce.cart.add(productId, quantity);
+    setCart(res);
+  };
+
+  const onUpdateToCart = async (productId, quantity) => {
+    const res = await commerce.cart.update(productId, quantity);
+    setCart(res);
+  };
+
+  const onRemoveToCart = async (productId) => {
+    const res = await commerce.cart.remove(productId);
+    setCart(res);
+  };
+
+  const onEmptyToCart = async () => {
+    const res = await commerce.cart.empty();
+    setCart(res);
   };
 
   useEffect(() => {
@@ -49,7 +64,18 @@ function App() {
           element={<Products products={products} onAddToCart={onAddToCart} />}
         />
         <Route path="/auth" element={<Auth />} />
-        <Route path="/cart" element={<Cart totalItems={cart.total_items} />} />
+        <Route
+          path="/cart"
+          element={
+            <Cart
+              totalItems={cart.total_items}
+              cart={cart}
+              onUpdateToCart={onUpdateToCart}
+              onRemoveToCart={onRemoveToCart}
+              onEmptyToCart={onEmptyToCart}
+            />
+          }
+        />
       </Routes>
       <Footer />
     </div>

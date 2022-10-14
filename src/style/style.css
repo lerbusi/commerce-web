@@ -57,7 +57,7 @@ nav ul li a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 4.25rem;
+  font-size: 2.5rem;
   color: aliceblue;
   display: flex;
   flex-wrap: wrap;
@@ -65,8 +65,8 @@ nav ul li a {
 }
 .hpimg .shopnow {
   color: aliceblue;
-  font-size: 2.5rem;
-  top: 65%;
+  font-size: 1.5rem;
+  top: 70%;
 }
 
 .footer {

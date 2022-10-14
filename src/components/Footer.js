@@ -29,7 +29,7 @@ const Footer = () => {
       >
         <Container>
           <Typography variant="body2" color="text.secondary">
-            Lerbusi 2022 | 網站來源參考 leafandclay.co | 僅供網頁開發學習用途
+            Lerbusi 2022 | 網站來源參考 leafandclay | 僅供網頁開發學習用途
           </Typography>
         </Container>
       </Box>

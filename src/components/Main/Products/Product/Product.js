@@ -14,7 +14,7 @@ const Product = ({ product, onAddToCart }) => {
     <Card style={{ maxWidth: "100%" }}>
       <CardMedia
         component="img"
-        height="350"
+        height="280"
         image={product.image.url}
         title={product.name}
       />

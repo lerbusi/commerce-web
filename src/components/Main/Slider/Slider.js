@@ -5,7 +5,10 @@ import "react-slideshow-image/dist/styles.css";
 import slideImages from "./slideImages/slideImages";
 import styles from "./slider.module.css";
 
-const span = ["1 / SUCCYULENTS AT LEAF & CLAY", "2 / AWESOME ECHEVERIA"];
+const span = [
+  "Leaf & Clay 拉近身心與大自然的距離",
+  "Leaf & Clay 打造都市叢林綠化生活",
+];
 
 export default function Slider() {
   return (
