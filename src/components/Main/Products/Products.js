@@ -2,7 +2,7 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import Product from "./Product/Product";
 
-import { CardMedia } from "@mui/material";
+import { CardMedia, Typography } from "@mui/material";
 import productimg from "../../../imgs/productimg.webp";
 
 // ---內建商品資料(for test)
@@ -56,7 +56,10 @@ const Products = ({ products, onAddToCart }) => {
         alt="productimg"
       ></CardMedia>
 
-      <h1 style={{ marginTop: "1%" }}>產品列表</h1>
+      <Typography style={{ marginTop: "2.5%" }} variant="h6" gutterBottom>
+        <h1>產品列表</h1>
+      </Typography>
+
       <Grid container justify="center" spacing={4} style={{ padding: "1rem" }}>
         {products.map((product) => (
           <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>

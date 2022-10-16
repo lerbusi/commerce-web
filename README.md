@@ -1,8 +1,10 @@
 ### LEAF & CLAY 多肉植物禮贈品
 
-你能夠在這裡試用：https://lerbusi.github.io/commerce website/
+你能夠在這裡試用：https://lerbusi.github.io/commerce-website/
 
 ![image](https://user-images.githubusercontent.com/108831232/195876218-8e9e6a6e-42e3-4a79-bccf-abd9dd97b66c.png)
+![image](https://user-images.githubusercontent.com/108831232/195876778-7ef2cbe5-6e12-4177-bc51-4c036574efe3.png)
+![image](https://user-images.githubusercontent.com/108831232/195876815-29ca8897-3b5b-40ef-bf39-8d9801c61474.png)
 
 #### React Hooks ( useState, useEffect ) / react-router
 
@@ -11,5 +13,4 @@
 - 版面美化 react-slideshow-image + 少許 CSS
 - 使用 @mui/material ui 建立組件與版面調整
 
-  - 2022/08 初版
-  - 2022/09-10 微調並佈署至 GitHub
+  - 2022/10 開始製作並佈署至 GitHub
