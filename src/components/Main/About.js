@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Typography, CardMedia } from "@mui/material";
 import abtimg from "../../imgs/about.webp";
+import item03b from "../../imgs/items/item03b.webp";
 
 const About = () => {
   return (
@@ -29,6 +30,15 @@ const About = () => {
           Lerbusi 2022｜網頁排版設計參考 leafandclay｜僅供網頁開發練習用途
           ｜無商業利用
         </Typography>
+        <CardMedia
+          style={{
+            height: 180,
+            marginTop: "1.5%",
+          }}
+          component="img"
+          image={item03b}
+          alt="abtimg"
+        ></CardMedia>
       </Container>
     </div>
   );
