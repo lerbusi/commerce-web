@@ -57,15 +57,15 @@ function App() {
     <div>
       <Nav totalItems={cart.total_items} />
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/commerce-web" element={<Homepage />} />
+        <Route path="/commerce-web/about" element={<About />} />
         <Route
-          path="/products"
+          path="/commerce-web/products"
           element={<Products products={products} onAddToCart={onAddToCart} />}
         />
-        <Route path="/auth" element={<Auth />} />
+        <Route path="/commerce-web/auth" element={<Auth />} />
         <Route
-          path="/cart"
+          path="/commerce-web/cart"
           element={
             <Cart
               totalItems={cart.total_items}
