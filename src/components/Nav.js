@@ -19,7 +19,7 @@ const Nav = ({ totalItems }) => {
           </Link>
         </li>
         <li>
-          <Link to="/commerce-web">
+          <Link to="/commerce-web/">
             <img src={logo} alt="logo" className="logo" />
           </Link>
         </li>
