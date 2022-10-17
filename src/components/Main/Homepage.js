@@ -19,7 +19,7 @@ const Homepage = () => {
       </Typography>
 
       <div style={{ marginBottom: "3.5rem" }}>
-        <Link to="/products">
+        <Link to="/commerce-web/products">
           <ButtonBases />
         </Link>
       </div>
@@ -29,7 +29,7 @@ const Homepage = () => {
       </Typography>
 
       <div className="hpimgs" style={{ marginBottom: "3.5rem" }}>
-        <Link to="/products">
+        <Link to="/commerce-web/products">
           <div
             className="hpimg"
             style={{ display: "flex", alignItems: "center" }}

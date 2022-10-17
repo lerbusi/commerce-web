@@ -18,7 +18,10 @@ const Cart = ({ cart, onUpdateToCart, onRemoveToCart, onEmptyToCart }) => {
       <br />
       <br />
       <Button size="large" type="button" variant="contained" color="primary">
-        <Link to="/products" style={{ color: "white", textDecoration: "none" }}>
+        <Link
+          to="/commerce-web/products"
+          style={{ color: "white", textDecoration: "none" }}
+        >
           開始購物
         </Link>
       </Button>
