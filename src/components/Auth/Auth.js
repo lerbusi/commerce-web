@@ -58,7 +58,7 @@ const Auth = () => {
   const navigate = useNavigate();
 
   const refreshPage = () => {
-    navigate(0);
+    navigate("/commerce-web/auth");
   };
 
   const login = async () => {
