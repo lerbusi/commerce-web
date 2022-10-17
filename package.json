@@ -2,6 +2,7 @@
   "name": "commerce-web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lerbusi.github.io/commerce-web/",
   "dependencies": {
     "@chec/commerce.js": "^2.8.0",
     "@emotion/react": "^11.10.4",
